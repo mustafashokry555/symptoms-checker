@@ -1,0 +1,226 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#header .text-capture .text {
+    padding-top: 5rem;
+}
+#header .text-capture h3 {
+    color:#666666;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2em;
+    font-size: 0.875rem;
+}
+#header .text-capture h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #242429;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+#header .text-capture p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.875rem;
+    font-size:0.9375rem;
+    color:#666666;
+}
+
+
+/*  the style of Diseases  */
+
+#Diseases {
+    background-color: #e3ecf0;
+}
+#Diseases .new h2, #Diseases .reading h2 {
+    font-size:1.7rem;
+    color:#2b5464;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0.4rem;
+    border-bottom:3px solid #16c1f5;
+    margin: 1.375rem 0;
+}
+#Diseases .new .Diseases-list .bg-white {
+    padding: 0.5rem;
+}
+#Diseases .new .Diseases-list h3 {
+    font-size: 0.98rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+#Diseases .new .Diseases-list .image {
+    padding-bottom: 9px;
+}
+#Diseases .new .Diseases-list p {
+    font-size: 1.2rem;
+    color: #29333f;
+    padding-top: 0.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+#Diseases .reading p {
+    font-size: 1.2rem;
+    color: #29333f;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.6rem;
+}
+
+
+
+
+/*  the style of medicine  */
+
+#Medicine-health h2{
+    font-size: 2.5rem;
+    color:#008eb7;
+    position: relative;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    z-index: 2;
+}
+
+#Medicine-health h2::before{
+    content: '';
+    width: 33%;
+    height: 4px;
+    left: 0;
+    top: 45%;
+    position: absolute;
+    background-color:#D8EDEE;
+    z-index: 1;
+}
+#Medicine-health h2::after{
+    content: '';
+    width: 33%;
+    height: 4px;
+    right: 0;
+    top: 45%;
+    position: absolute;
+    background-color:#D8EDEE;
+    z-index: 1;
+}
+#Medicine-health .item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#Medicine-health .item .layer {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+#Medicine-health .item:hover .layer {
+    background-color: rgba(0,0,0,0.5);
+
+}
+#Medicine-health .item h3 {
+    font-size:1.5rem;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+    border: 1px solid white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+}
+#Medicine-health .item img {
+    width: 100%;
+}
+
+
+/*  the style of services  */
+
+#services h2 {
+    font-size: 2.5rem;
+    color:#008eb7;
+    position: relative;
+    margin-bottom: 4rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    z-index: 2;
+}
+
+#services h2::before{
+    content: '';
+    width: 33%;
+    height: 4px;
+    left: 0;
+    top: 45%;
+    position: absolute;
+    background-color:#D8EDEE;
+    z-index: 1;
+}
+#services h2::after{
+    content: '';
+    width: 33%;
+    height: 4px;
+    right: 0;
+    top: 45%;
+    position: absolute;
+    background-color:#D8EDEE;
+    z-index: 1;
+}
+#services .item span {
+    width: 25px;
+    height: 25px;
+    background-color: #f0f4f6;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#services .item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+}
+#services .item p {
+    color:#7f7f7f;
+    font-size: 0.937rem;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: #e3ecf0;
+}
+
+
+
+@media (max-width:1200px){
+    #Medicine-health h2::after{
+        display: none;
+    }
+    #Medicine-health h2::before{
+        display: none;
+    }
+    #services h2::before{
+        display: none;
+    }
+    #services h2::after{
+        display: none;
+    }
+}
